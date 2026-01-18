@@ -1,6 +1,6 @@
 * {
-    max-width: 100%;
-    margin: 0;
+    max-width: 1600px;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -10,7 +10,7 @@
 }
 
 nav {
-    background-color: #412567;
+    background-color: #1A0B2E;
     height: 5.75em;
     padding-left: 12.5em;
     padding-right: 12.5em;
@@ -29,9 +29,9 @@ nav {
 }
 
 .nav-wave {
-    background-image: linear-gradient(to bottom,#F7E93F,#FB09B4,#9100F8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to bottom, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
@@ -44,6 +44,7 @@ nav {
     text-decoration: none;
     list-style-type: none;
     font-size: 1em;
+    font-weight: 500;
     color: #FFFFFF;
 }
 
@@ -51,11 +52,89 @@ nav {
     width: 8.45em;
     height: 2.75em;
     font-size: 1em;
+    font-weight: 600;
     border-radius: 50px;
     color: #FFFFFF;
-    background-image: linear-gradient(to bottom left,#F7E93F,#FB09B4,#9100F8);
+    background-image: linear-gradient(to bottom left, #F7E93F, #FB09B4, #9100F8);
     border: none;
 
 }
-.btn-one:hover{color: black;
-height: 2.90em;}
+
+.btn-one:hover {
+    color: black;
+    height: 3em;
+}
+.hero-bg{
+    width: 1600px;
+    height: 760px;
+    display: flex; 
+}
+.app{background-color:#1A0B2E;}
+.info{font-size: 3em;
+font-weight: 700;}
+.text{color: #FFFFFF;
+    text-align:  center;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+.ratting-p{
+    display: flex;
+    gap: 80px;
+}
+.ratting-p div{
+    text-align: center;
+    padding-top: 160px;
+    padding-bottom: 120px;
+
+}
+.ratting-p h3{
+    color: #00FF88;
+    font-size: 3em;
+    font-weight: 900;
+}
+.ratting-p p{
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: 400;
+}
+.host{background-color: #1A0B2E;
+}
+.host h1{
+    font-size: 3em;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+}
+.host-card{
+    display: flex;
+    width: 1200px;
+    height: 280px;
+    background-color: #533C72;
+    padding: 40px;
+    border-radius: 40px;
+    
+}
+.card-txt h3{
+    margin-top: 40px;
+font: size 2em; 
+font-weight: 700;
+color: #FFFFFF;
+}
+.card-txt p{color: #FFFFFF;
+font-size: 1em;
+font-weight: 500;}
+
+.power img{flex-direction: row;
+background-color:transparent;
+border-radius: 40px;
+margin-top: 50px;
+height: 30px;
+width: 30px;padding: 20px;
+}
+.power img :hover{
+    background-color: transparent;
+    background-color: #F7E93F;
+}
