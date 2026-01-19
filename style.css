@@ -14,6 +14,7 @@ nav {
     height: 5.75em;
     padding-left: 12.5em;
     padding-right: 12.5em;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,77 +65,267 @@ nav {
     color: black;
     height: 3em;
 }
-.hero-bg{
+
+.hero-bg {
+    background-image: url(./resources/hero-bg.png);
     width: 1600px;
     height: 760px;
-    display: flex; 
+    display: flex;
 }
-.app{background-color:#1A0B2E;}
-.info{font-size: 3em;
-font-weight: 700;}
-.text{color: #FFFFFF;
-    text-align:  center;
+
+.paren {
+    display: flex;
+    position: absolute;
+}
+
+.circle {
+    padding-top: 80px;
+    position: relative;
+    left: 180%;
+
+}
+
+.mic {
+    position: absolute;
+    left: 214%;
+    top: 40%;
+    z-index: 1;
+}
+
+.anim {
+    position: absolute;
+    left: 260%;
+    top: 25%;
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: 600;
+    background-color: #00FF88;
+    border-radius: 50px;
+    border: none;
+    animation: blink 1s infinite ;
+    animation: zoom 1s infinite;
+    
+}
+.anim:hover{
+    background-color: #FB09B4;
+}
+@keyframes zoom{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+}
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.bottom {
+    margin-top: 491px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.bottom h3 {
+    font-size: 3.75em;
+    font-weight: 800;
+}
+
+.button button {
+    margin-top: 24px;
+    padding: 12px 20px;
+    gap: 8px;
+}
+
+.btn-2 {
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 50px;
+    color: #FFFFFF;
+    background-image: linear-gradient(to bottom left, #F7E93F, #FB09B4, #9100F8);
+    border: none;
+}
+
+.btn-3 {
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 50px;
+    color: #00FF88;
+    background-color: transparent;
+    border: 2px solid #00FF88;
+}
+
+.btn-2:hover {
+
+    color: black;
+    height: 50px;
+}
+
+.btn-3:hover {
+
+    color: white;
+    height: 50px;
+}
+
+.app {
+    background-color: #1A0B2E;
+}
+
+.info {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.text {
+    color: #FFFFFF;
+    text-align: center;
     margin: 0 auto;
     padding-top: 50px;
     padding-left: 200px;
     padding-right: 200px;
 
 }
-.ratting-p{
+
+.ratting-p {
     display: flex;
     gap: 80px;
 }
-.ratting-p div{
+
+.ratting-p div {
     text-align: center;
     padding-top: 160px;
     padding-bottom: 120px;
 
 }
-.ratting-p h3{
+
+.ratting-p h3 {
     color: #00FF88;
     font-size: 3em;
     font-weight: 900;
 }
-.ratting-p p{
+
+.ratting-p p {
     color: #FFFFFF;
     font-size: 1em;
     font-weight: 400;
 }
-.host{background-color: #1A0B2E;
+
+
+
+.why{
+    padding: 120px 200px;
+    background-color: #1A0B2E;
 }
-.host h1{
+.why h2{
+    color: #FFFFFF;
+    font-size:48px;
+    font-weight: 700;
+    text-align: center;
+}
+.grid{
+    padding-top: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.card{
+    background-color: #533C72;
+    border-radius: 16px;
+    padding: 25px;
+
+}
+
+.tall{
+    grid-row: span 2;
+}
+.wide{
+    grid-column: span 2;
+}
+.host {
+    background-color: #1A0B2E;
+    padding-bottom: 120px;
+}
+
+.host h1 {
+    padding-bottom: 60px;
     font-size: 3em;
     color: #FFFFFF;
     font-weight: 700;
     text-align: center;
 }
-.host-card{
+
+.host-card {
+
     display: flex;
     width: 1200px;
     height: 280px;
     background-color: #533C72;
     padding: 40px;
     border-radius: 40px;
-    
-}
-.card-txt h3{
-    margin-top: 40px;
-font: size 2em; 
-font-weight: 700;
-color: #FFFFFF;
-}
-.card-txt p{color: #FFFFFF;
-font-size: 1em;
-font-weight: 500;}
 
-.power img{flex-direction: row;
-background-color:transparent;
-border-radius: 40px;
-margin-top: 50px;
-height: 30px;
-width: 30px;padding: 20px;
 }
-.power img :hover{
+
+.card-txt h3 {
+    margin-top: 40px;
+    font: size 2em;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.card-txt p {
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.power img {
+    flex-direction: row;
+    background-color: transparent;
+    border-radius: 40px;
+    margin-top: 50px;
+    height: 30px;
+    width: 30px;
+    padding: 20px;
+}
+
+.power img :hover {
     background-color: transparent;
     background-color: #F7E93F;
+}
+
+
+
+
+
+footer {
+    background-image: url(./resources/footer-bg.png);
+    height: 412px;
+    text-align: center;
+    padding-top: 120px;
+    color: #FFFFFF;
+
+    .copy {
+        font-weight: 400;
+    }
+  background-repeat: no-repeat;
+}
+
+footer h2 {
+    font-size: 4em;
+    font-weight: 800;
+}
+
+
+.image {
+    width: 544px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    font-weight: 600;
+}
+h2 .foot-wave {
+    background-image: linear-gradient(to bottom, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
