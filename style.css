@@ -68,7 +68,6 @@ nav {
 
 .hero-bg {
     background-image: url(./resources/hero-bg.png);
-    width: 1600px;
     height: 760px;
     display: flex;
 }
