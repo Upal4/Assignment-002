@@ -102,22 +102,41 @@ nav {
     background-color: #00FF88;
     border-radius: 50px;
     border: none;
-    animation: blink 1s infinite ;
+    animation: blink 1s infinite;
     animation: zoom 1s infinite;
-    
+
 }
-.anim:hover{
+
+.anim:hover {
     background-color: #FB09B4;
 }
-@keyframes zoom{
-    0%{transform: scale(1);}
-    50%{transform: scale(1.2);}
-    100%{transform: scale(1);}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
-@keyframes blink{
-    0%{opacity: 1;}
-    50%{opacity: 0;}
-    100%{opacity: 1;}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .bottom {
@@ -212,49 +231,114 @@ nav {
 
 
 
-.why{
+.why {
     padding: 120px 200px;
     background-color: #1A0B2E;
 }
-.why h2{
+
+.why h2 {
     color: #FFFFFF;
-    font-size:48px;
+    font-size: 48px;
     font-weight: 700;
     text-align: center;
 }
-.grid{
+
+.grid {
     padding-top: 50px;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
-.grid img{
+
+.grid img {
     width: 60px;
     height: 60px;
 }
-.why h3{
+
+.why h3 {
     font-size: 1.5em;
     color: #FFFFFF;
 }
-.why p{
+
+.why p {
     padding-top: 10px;
     font-size: 1em;
-    color:antiquewhite;
+    color: antiquewhite;
 }
 
-.card{
+.card {
     background-color: #533C72;
     border-radius: 16px;
     padding: 25px;
 
 }
 
-.tall{
+.card:hover {
+    background-color: #FB09B4;
+}
+
+.tall {
     grid-row: span 2;
 }
-.wide{
+
+.wide {
     grid-column: span 2;
 }
+
+.feature {
+    padding: 120px 200px;
+    background-color: #1A0B2E;
+}
+
+.feature h2 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.yt {
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.yt iframe {
+    width: 100%;
+    gap: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.frame {
+    background-color: #533C72;
+    margin: 10px;
+    border-radius: 20px;
+}
+.frame:hover{
+    background-color: #FB09B4;
+}
+
+.frame h3 {
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #FFFFFF;
+
+}
+
+.frame p {
+    padding: 20px;
+    color: antiquewhite;
+    font-size: 1em;
+    font-weight: 400;
+
+}
+
+.green {
+    font-size: 1em;
+}
+
 .host {
     background-color: #1A0B2E;
     padding-bottom: 120px;
@@ -278,10 +362,11 @@ nav {
     border-radius: 40px;
 
 }
+.host-card:hover{background-color: #FB09B4;}
 
 .card-txt h3 {
     margin-top: 40px;
-    font: size 2em;
+    font-size: 2em;
     font-weight: 700;
     color: #FFFFFF;
 }
@@ -298,16 +383,17 @@ nav {
     flex-direction: row;
     border: 2px solid white;
     gap: 8px;
-  
+
     border-radius: 40px;
     margin-top: 50px;
 
     padding: 10px;
 }
 
-.power img:hover{
-    background-color: #FB09B4;
+.power img:hover {
+    background-color:#1A0B2E;
 }
+
 footer {
     background-image: url(./resources/footer-bg.png);
     height: 412px;
@@ -318,7 +404,8 @@ footer {
     .copy {
         font-weight: 400;
     }
-  background-repeat: no-repeat;
+
+    background-repeat: no-repeat;
 }
 
 footer h2 {
@@ -334,6 +421,7 @@ footer h2 {
     font-size: 1em;
     font-weight: 600;
 }
+
 h2 .foot-wave {
     background-image: linear-gradient(to bottom, #F7E93F, #FB09B4, #9100F8);
     -webkit-background-clip: text;
