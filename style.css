@@ -228,6 +228,19 @@ nav {
     gap: 20px;
     grid-template-columns: repeat(3,1fr);
 }
+.grid img{
+    width: 60px;
+    height: 60px;
+}
+.why h3{
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+.why p{
+    padding-top: 10px;
+    font-size: 1em;
+    color:antiquewhite;
+}
 
 .card{
     background-color: #533C72;
@@ -280,24 +293,21 @@ nav {
 }
 
 .power img {
+    width: 20px;
+    height: 20px;
     flex-direction: row;
-    background-color: transparent;
+    border: 2px solid white;
+    gap: 8px;
+  
     border-radius: 40px;
     margin-top: 50px;
-    height: 30px;
-    width: 30px;
-    padding: 20px;
+
+    padding: 10px;
 }
 
-.power img :hover {
-    background-color: transparent;
-    background-color: #F7E93F;
+.power img:hover{
+    background-color: #FB09B4;
 }
-
-
-
-
-
 footer {
     background-image: url(./resources/footer-bg.png);
     height: 412px;
