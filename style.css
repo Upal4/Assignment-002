@@ -49,6 +49,12 @@ nav {
     color: #FFFFFF;
 }
 
+.link a:hover {
+    font-size: 1.05em;
+    color: #FB09B4;
+
+}
+
 .gradiant-box button {
     width: 8.45em;
     height: 2.75em;
@@ -314,7 +320,8 @@ nav {
     margin: 10px;
     border-radius: 20px;
 }
-.frame:hover{
+
+.frame:hover {
     background-color: #FB09B4;
 }
 
@@ -361,7 +368,10 @@ nav {
     border-radius: 40px;
 
 }
-.host-card:hover{background-color: #FB09B4;}
+
+.host-card:hover {
+    background-color: #FB09B4;
+}
 
 .card-txt h3 {
     margin-top: 40px;
@@ -390,12 +400,12 @@ nav {
 }
 
 .power img:hover {
-    background-color:#1A0B2E;
+    background-color: #1A0B2E;
 }
 
 footer {
     background-image: url(./resources/footer-bg.png);
-    height: 412px;
+    height: 400px;
     text-align: center;
     padding-top: 120px;
     color: #FFFFFF;
@@ -430,8 +440,86 @@ h2 .foot-wave {
 
 
 
+@media screen and (max-width: 576px) {
 
 
+    * {
+        max-width: 100%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
 
 
+    .text {
+        padding: 40px 16px;
+    }
 
+    .info {
+        font-size: 1.8em;
+    }
+
+    .text p {
+        font-size: 0.85em;
+        line-height: 1.6;
+    }
+
+    .ratting-p {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        padding-bottom: 40px;
+    }
+
+    .ratting-p div {
+        padding: 0;
+    }
+
+    .ratting-p h3 {
+        font-size: 2em;
+    }
+
+    .ratting-p p {
+        font-size: 0.75em;
+    }
+
+    .why {
+        padding: 40px 16px;
+    }
+
+    .why h2 {
+        font-size: 1.8em;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tall,
+    .wide {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .feature {
+        padding: 40px 16px;
+    }
+
+    .feature h2 {
+        font-size: 1.8em;
+    }
+
+    .yt {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .yt iframe {
+        width: 100%;
+        height: auto;
+
+    }
+
+
+}
